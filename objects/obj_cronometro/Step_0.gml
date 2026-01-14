@@ -28,7 +28,7 @@ if obj_control.ingame{
 		spawn_y = random_range(1080, 1180)
 	}
 
-	if T_spawn = 0
+	if T_spawn < 0 and !instance_exists(obj_boss1)
 	{
 		instance_create_layer(spawn_x,spawn_y,"Instances",obj_asteroide)
 		T_spawn = TR_spawn
@@ -36,3 +36,6 @@ if obj_control.ingame{
 	T_spawn--
 }
 
+if T_game = 60 and !instance_exists(obj_boss1){
+	instance_create_layer(-128,-256,"Instances",obj_boss1)
+}

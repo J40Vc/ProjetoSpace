@@ -26,6 +26,9 @@ if room = Fase1{
 		draw_set_colour(c_white)
 		draw_text(960,500,"Poeira Coletadas: " + string(global.poeiras_rodada))
 		draw_text(960,540,"Poeira Totais: " + string(global.pontos))
+		if global.poeiras_roxas > 0{
+			draw_text(960,580,"Poeira Roxa: " + string(global.poeiras_roxas))
+		}
 	}
 
 	if !instance_exists(obj_player) and ingame{

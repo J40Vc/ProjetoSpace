@@ -16,4 +16,5 @@ global.up_ima = 0
 
 //Player
 
-global.pontos = 100
+global.pontos = 0
+global.poeiras_roxas = 0

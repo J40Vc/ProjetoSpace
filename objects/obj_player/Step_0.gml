@@ -49,7 +49,7 @@ if vida = 0 {
 
 //Imã
 
-if global.up_ima > 0
+if global.up_ima > 0 and !instance_exists(obj_ima)
 {
 	instance_create_layer(x,y,"Instances",obj_ima)
 }
