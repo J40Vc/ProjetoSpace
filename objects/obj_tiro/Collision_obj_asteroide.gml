@@ -5,7 +5,7 @@ if other.vida > (1 + global.up_dano){
 other.vida -= dano
 
 repeat(3) {
-	instance_create_layer(x,y,"Instances",obj_particula,)
+	instance_create_layer(x,y,"Instances",obj_particula)
 }
 
 obj_shake(other,10,5)

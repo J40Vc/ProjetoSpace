@@ -1,6 +1,15 @@
 persistent = true
 
-ingame = false
+//Menu
+
+T_spawn = 0
+TR_spawn = 10
+
+index = 0
+opcoes = ["Iniciar","Salvar","Carregar","Sair"]
+op_max = array_length(opcoes)
+salvo = false
+Tsalvo = 1
 
 //Upgrades
 
@@ -19,5 +28,5 @@ global.up_dano_boss = 0
 
 //Player
 
-global.pontos = 1000
-global.poeiras_roxas = 0
+global.pontos = 0
+global.poeiras_vermelha = 0

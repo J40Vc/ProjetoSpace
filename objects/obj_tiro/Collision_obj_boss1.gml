@@ -5,7 +5,7 @@ if other.vida > (obj_up_dano_boss){
 other.vida -= dano_boss
 
 repeat(3) {
-	instance_create_layer(x,y,"Instances",obj_particula,)
+	instance_create_layer(x,y,"Instances",obj_particula)
 }
 
 obj_shake(other,10,5)
