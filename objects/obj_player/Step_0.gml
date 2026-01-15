@@ -1,12 +1,14 @@
 var esquerda = keyboard_check(ord("A"))
 var direita = keyboard_check(ord("D"))
 var acelera = keyboard_check(ord("W"))
-var atira = keyboard_check_pressed(vk_space)
+var atira = keyboard_check(vk_space)
+var freio = keyboard_check(vk_shift)
 
 //Timers
 
 T_hit--
 T_Ahit--
+T_tiro--
 
 //Controle de Direção
 
@@ -34,11 +36,20 @@ if !acelera and speed > 0 {
 	speed -= aceleracao
 }
 
+//Freio
+
+if global.up_freio = 1 and freio{
+	if speed > 0{
+		speed -= 0.2
+	}
+}
+
 //Tiro
 
-if atira {
+if atira and T_tiro < 0 {
 	audio_play_sound(sn_tiro,1,0)
 	instance_create_layer(x,y,"Instances",obj_tiro)
+	T_tiro = TR_tiro
 }
 
 //Vida

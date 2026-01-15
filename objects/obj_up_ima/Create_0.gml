@@ -1,1 +1,1 @@
-valor = 80
+valor = 40

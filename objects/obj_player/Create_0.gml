@@ -4,9 +4,9 @@ vida = 1 + global.up_vida
 
 //Velocidade
 
-aceleracao = 0.04 * (global.up_velocidade + 1)
-aceleracao_max = 4 * (global.up_velocidade + 1)
-rotacao = 1 * (1 + global.up_rotacao)
+aceleracao = 0.08 + (global.up_velocidade * 0.2)
+aceleracao_max = 10
+rotacao = 2 * (global.up_rotacao + 1)
 
 //Pontos
 
@@ -16,3 +16,5 @@ global.poeiras_rodada = 0
 
 T_hit = 100
 T_Ahit = 100
+T_tiro = 0
+TR_tiro = 50 - (10 * global.up_tiro)

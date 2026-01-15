@@ -36,6 +36,6 @@ if obj_control.ingame{
 	T_spawn--
 }
 
-if T_game = 60 and !instance_exists(obj_boss1){
+if T_game = 120 and !instance_exists(obj_boss1){
 	instance_create_layer(-128,-256,"Instances",obj_boss1)
 }

@@ -13,8 +13,11 @@ global.up_taxa_spawn = 0
 global.up_valor_asteroide = 0
 global.up_dano_colisao = 0
 global.up_ima = 0
+global.up_tiro = 0
+global.up_freio = 0
+global.up_dano_boss = 0
 
 //Player
 
-global.pontos = 0
+global.pontos = 1000
 global.poeiras_roxas = 0

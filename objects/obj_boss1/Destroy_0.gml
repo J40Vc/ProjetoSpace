@@ -5,5 +5,5 @@ repeat(30){
 }
 
 repeat(1){
-	instance_create_layer(x,y,"Instances",obj_poeira_roxa)
+	instance_create_layer(x,y,"Instances",obj_poeira_vermelha)
 }
